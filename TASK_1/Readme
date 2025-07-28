@@ -63,4 +63,30 @@ This repository demonstrates how to run the **`sifive-welcome` program** on the 
 - The **blue LED on the board should start blinking**.
 - The **COM terminal** will display the message:  
   ```text
-  SiFive!
+  
+                  SIFIVE, INC.
+
+           5555555555555555555555555
+          5555                   5555
+         5555                     5555
+        5555                       5555
+       5555       5555555555555555555555
+      5555       555555555555555555555555
+     5555                             5555
+    5555                               5555
+   5555                                 5555
+  5555555555555555555555555555          55555
+   55555           555555555           55555
+     55555           55555           55555
+       55555           5           55555
+         55555                   55555
+            55555               55555
+             55555           55555
+               55555       55555
+                 55555   55555
+                   555555555
+                     55555
+                       5
+
+
+               Welcome to SiFive!
