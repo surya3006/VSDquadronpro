@@ -1,0 +1,66 @@
+# 🚀 Run sifive-welcome Program on VSDSquadron PRO (RISC-V)
+
+This repository demonstrates how to run the **`sifive-welcome` program** on the **VSDSquadron PRO** development board powered by the **SiFive FE310-G002 RISC-V SoC**. Upon successful execution, the **onboard LED will blink**, confirming the setup and programming were successful.
+
+---
+
+## 🔧 Requirements
+
+- **VSDSquadron PRO RISC-V board**
+- USB Type-C cable
+- A Windows/Linux PC
+- [Zadig USB driver tool](https://zadig.akeo.ie/)
+- [Freedom Studio IDE](https://vsd-labs.sgp1.cdn.digitaloceanspaces.com/vsd-labs/VSDSquadronPRO.tar.gz)
+- [FE310-G002 Documentation](https://www.vlsisystemdesign.com/wp-content/uploads/2024/09/fe310-g002-datasheet-v1p2.pdf)
+
+---
+
+## 📥 Installation Steps
+
+### 1. Install USB Driver (Windows)
+
+1. Download and launch **[Zadig](https://zadig.akeo.ie/)**.
+2. In **Options**, click `List All Devices`.
+3. Select **Dual RS-232-HS (Interface 0)**.
+4. Choose driver: `libusb-win32`.
+5. Click **Install Driver**.
+
+---
+
+### 2. Download and Set Up Freedom Studio
+
+1. Download Freedom Studio:  
+   [VSDSquadronPRO.tar.gz](https://vsd-labs.sgp1.cdn.digitaloceanspaces.com/vsd-labs/VSDSquadronPRO.tar.gz)
+2. Extract the archive to `C:\` or `D:\`.
+3. Open `FreedomStudio-3-1-1` folder.
+4. Launch `FreedomStudio`.
+
+---
+
+### 3. Create Workspace & Project
+
+1. Create and open a new **workspace**.
+2. Create a **new C project**:
+   - Select `sifive-hifive1` as the target.
+   - Choose example: **sifive-welcome**.
+   - Set up a **Debug Configuration** for OpenOCD.
+
+---
+
+## ▶️ Run sifive-welcome Program
+
+1. **Connect your board** to your PC using a USB-C cable.
+2. In Freedom Studio:
+   - Open the `Debug Configurations` window.
+   - Select your project under **OpenOCD**.
+   - Click **Debug**.
+3. Click **Run** when the debug session starts.
+
+---
+
+## ✅ What Should Happen
+
+- The **blue LED on the board should start blinking**.
+- The **COM terminal** will display the message:  
+  ```text
+  SiFive!
