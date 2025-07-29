@@ -1,0 +1,47 @@
+# 🧠 MNIST Handwritten Digit Recognition using Neural Network (Python)
+
+This project trains a simple neural network on the MNIST dataset to recognize handwritten digits (0–9). It includes training, evaluation, model size/memory estimation, logging, and conversion to TensorFlow Lite format with quantization for size reduction.
+
+---
+
+## 🚀 Features
+
+- Load and preprocess MNIST data
+- Train a neural network using Keras
+- Evaluate and visualize predictions
+- Log all outputs (model summary, metrics, sizes)
+- Save model in `.keras` and `.tflite` formats
+- Quantize the model to reduce storage footprint
+- Estimate memory usage required for inference
+
+---
+
+## 📁 File Structure
+
+mnist_digit_recognition.py # Main Python script
+my_model.keras # Saved Keras model
+model_quantized.tflite # TFLite quantized model
+mnist_training_YYYYMMDD_HHMMSS.log # Log file with training and model info
+
+## How It Works
+Loads the MNIST handwritten digit dataset
+
+Normalizes and flattens the image data
+
+Builds a neural network using Dense layers
+
+Trains the model using categorical_crossentropy and Adam optimizer
+
+Evaluates accuracy on the test set
+
+Saves the model as .keras
+
+Converts the model to .tflite (quantized)
+
+Logs all the steps and statistics
+
+## How to run
+python data_prediction.py
+
+
+
